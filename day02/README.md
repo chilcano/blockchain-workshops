@@ -8,7 +8,13 @@ Select `RINKEBY` as Endpoints.
 
 Copy the HTTPS endpoint
 
-## 
+## Add the Infura network
+
+### Create the project
+
+![](/workshop-ethereum/day02/img/eth-infura-01.png)
+
+### Update the network
 
 Copy below into `truffle-config.js` as a new network.
 
