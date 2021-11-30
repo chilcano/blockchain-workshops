@@ -1,5 +1,14 @@
 # Day 01
 
+## Resources
+
+### Ethereum Client Libs
+- Web3
+- Ethers
+
+### Development Framework
+- Truffle
+- Hardhat
 
 ## Install NodeJS
 
