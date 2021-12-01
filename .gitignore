@@ -10,3 +10,6 @@ target/
 .vagrant
 .vscode
 *.deb
+
+### nodejs
+nodesource_setup.sh

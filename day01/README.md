@@ -12,21 +12,27 @@
 
 ## Install NodeJS
 
-1. Remove previous installed NodeJS
-
+### 1. Check previous installed NodeJS.
 ```sh
-sudo apt -y remove nodejs
+node -v
+v10.19.0
 
+npm -v
+6.14.4
 ```
 
-2. Update the APT repositories and install latest NodeJS version
+### 2. Remove previous installed NodeJS
+```sh
+sudo apt -y remove nodejs
+```
 
+### 3. Update the APT repositories and install latest NodeJS version
 ```sh
 curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
 
 sudo bash nodesource_setup.sh
 
-sudo apt install nodejs
+sudo apt -y install nodejs
 ```
 
 ## Install Truffle globally 
