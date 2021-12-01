@@ -12,7 +12,7 @@ Copy the HTTPS endpoint
 
 ### Create the project
 
-![](/workshop-ethereum/day02/img/eth-infura-01.png)
+![](img/eth-infura-01.png)
 
 ### Update the network
 
@@ -33,20 +33,20 @@ Copy below into `truffle-config.js` as a new network.
 We are going to use [Metamask](https://metamask.io/) as a Browser extension. In my case, Firefox.
 Initialize a wallet and ready, you should have this:
 
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-01.png)
+![](img/eth-metamask-wallet-01.png)
 
 ### Add a new Network to Metamask
 
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-03.png)
+![](img/eth-metamask-wallet-03.png)
 
 ### Using Etherscan.io to query transactions
 
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-04.png)
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-05.png)
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-06.png)
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-07.png)
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-08.png)
-![](/workshop-ethereum/day02/img/eth-metamask-wallet-09.png)
+![](img/eth-metamask-wallet-04.png)
+![](img/eth-metamask-wallet-05.png)
+![](img/eth-metamask-wallet-06.png)
+![](img/eth-metamask-wallet-07.png)
+![](img/eth-metamask-wallet-08.png)
+![](img/eth-metamask-wallet-09.png)
 
 
 ### Update truffe-config.js
@@ -81,6 +81,7 @@ module.exports = {
 
 ### Run the App
 
+```sh
 npm install @truffle/hdwallet-provider
 
 or this if you have installed it globally
@@ -88,12 +89,15 @@ or this if you have installed it globally
 sudo npm install -g @truffle/hdwallet-provider
 
 truffle console --network rinkeby
+```
 
-Deploy without testing
-
+Now, deploy without testing
+```sh
 truffle console --network rinkeby
 truffle(rinkeby)> deploy
+```
 
+You will see this:
 ```sh
 ...
 
