@@ -31,21 +31,74 @@ sudo apt -y remove nodejs
 curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
 
 sudo bash nodesource_setup.sh
+```
+You will see this:
 
+```sh
+...
++ apt-get update
+Get:1 https://deb.nodesource.com/node_16.x focal InRelease [4583 B]
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+     echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+```
+
+Finally, let's install NodeJS 16.x
+```sh
 sudo apt -y install nodejs
+```
+### 4. Check installed NodeJS
+
+```sh
+$ node -v
+v16.13.0
+
+└ $ npm -v
+8.1.0
 ```
 
 ## Install Truffle globally 
 
 We are going to use [Truffle](https://trufflesuite.com/).
-
 ```sh
-npm install -g truffle
+sudo npm install -g truffle
 ```
+You will see this:
+```sh
+...
+added 1088 packages, and audited 1089 packages in 4m
+
+83 packages are looking for funding
+  run `npm fund` for details
+
+72 vulnerabilities (7 low, 50 moderate, 13 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible, run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm notice
+npm notice New patch version of npm available! 8.1.0 -> 8.1.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.1.4
+npm notice Run npm install -g npm@8.1.4 to update!
+npm notice
+```
+
+
+
+
+
 
 ### Create a simple SmartContract for React
 
-https://trufflesuite.com/boxes/react
+Use the Truffle documentation for further details and how to create other kind of applications: [https://trufflesuite.com/boxes/react](https://trufflesuite.com/boxes/react)
 
 ```sh
 mkdir MyFirstSmartContract
@@ -86,13 +139,13 @@ truffle(develop)>
 
 #### Playing with the Development Console
 
-1. Get Accounts
+1. Get Accounts.
 ```sh
 truffle(develop)> web3.eth.getBalance(accounts[0])
 '100000000000000000000'
 ```
 
-2. Exit from Development Console
+2. Exit from Development Console.
 ```sh
 truffle(develop)> web3.eth.getBalance(accounts[0])
 '100000000000000000000'
