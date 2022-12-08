@@ -2,8 +2,8 @@
 
 ## Ethereum and Near Smart Contracts security auditing
 
-* [Metapool - App Sec Assessment - Gustavo&Roger v1.0](Metapool - App Sec Assessment - Gustavo&Roger v1.0.pdf)
-* [Metapool - RUST Smart Contract Auditing](Metapool - RUST Smart Contract Auditing.pdf)
+* [Metapool - App Sec Assessment - Gustavo&Roger v1.0](Metapool_AppSec_Assessment_Gustavo&Roger_v1.0.pdf)
+* [Metapool - RUST Smart Contract Auditing](Metapool_RUST_Smart_Contract_Auditing)
 
 
 # Dapps Tutorials
