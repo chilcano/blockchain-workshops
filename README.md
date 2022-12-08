@@ -1,9 +1,9 @@
-# Blockchain Workshop (Ethereum and Near)
+# Blockchain Workshops
 
-## Ethereum and Near Smartcontracts security aduting
+## Ethereum and Near Smart Contracts security auditing
 
-* (Metapool - App Sec Assessment - Gustavo&Roger v1.0.pdf)[Metapool - App Sec Assessment - Gustavo&Roger v1.0]
-* (Metapool - RUST Smart Contract Auditing.pdf)[Metapool - RUST Smart Contract Auditing]
+* [Metapool - App Sec Assessment - Gustavo&Roger v1.0](Metapool - App Sec Assessment - Gustavo&Roger v1.0.pdf)
+* [Metapool - RUST Smart Contract Auditing](Metapool - RUST Smart Contract Auditing.pdf)
 
 
 # Dapps Tutorials
@@ -18,7 +18,9 @@
   * https://www.youtube.com/watch?v=OcmvMs4AMbM
   * https://savjee.be/videos/simply-explained/zero-knowledge-proof/
 
-# Security Auditing of Smart Contracts  
+# Security Auditing of Smart Contracts 
+
+## Solidity
 
 - SAILFISH: Vetting Smart Contract State-Inconsistency Bugs in Seconds:
   * [Video](https://www.youtube.com/watch?v=L7rxQzr7_0E)
