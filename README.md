@@ -11,6 +11,7 @@
 * https://www.30daysofweb3.xyz/
 * https://codesandbox.io/examples/package/web3
 * https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial
+  - [Step 1- My notes & summary](ethereum_dapp_tutorial/)
 
 # Zero-Knowledge Proof
 
