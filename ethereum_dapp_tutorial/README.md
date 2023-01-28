@@ -155,3 +155,80 @@ In the same terminal and same folder `dapp-election`, open the VSCode by executi
 ![](imgs/chilcano-dapp-3-create-election.sol.png)
 
 
+__4. Add a simple new contract and migrate it__
+
+Add the new simple contract `contracts/Election.sol` with this code in solidity:
+```js
+pragma solidity >=0.4.22 <0.8.0;
+
+contract Election {
+    // Read/write candidate
+    string public candidate;
+
+    // Constructor
+    constructor () public {
+        candidate = "Candidate 1";
+    }
+}
+```
+
+And add the migration script `migrations/2_deploy_contracts.js` to migrate the `contracts/Election.sol`.
+
+```js
+var Election = artifacts.require("./Election.sol");
+
+module.exports = function(deployer) {
+  deployer.deploy(Election);
+};
+```
+
+Once create both files, run `truffle migrate` in your terminal, you should see this:
+
+```console
+$ truffle migrate
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Election.sol
+> Compiling ./contracts/Migrations.sol
+> Artifacts written to /home/chilcano/repos/blockchain-workshops/ethereum_dapp_tutorial/dapp-election/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x85d740794170e95d3e91d4ff096e218f31d951bab955d3c3ef1e60a73704bf0e
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x6C959b6cACb39be61dc8bF18e813025204345108
+   > block number:        1
+   > block timestamp:     1674932694
+   > account:             0xB3dA4587b4c3bd8Ab03e318A590C1b53f32B6606
+   > balance:             99.99616114
+   > gas used:            191943 (0x2edc7)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00383886 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00383886 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00383886 ETH
+```
+
+If you got this, that means you have migrated successfully your smart contracts.
