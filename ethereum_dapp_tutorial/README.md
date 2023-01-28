@@ -150,3 +150,8 @@ Commands:
   Run dev server: npm run dev
 ```
 
+In the same terminal and same folder `dapp-election`, open the VSCode by executing this command `code .`. This will open VSCode where you can browse the files created with previous command `truffle unbox pet-shop`. You will see this:
+
+![](imgs/chilcano-dapp-3-create-election.sol.png)
+
+
