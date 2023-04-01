@@ -5,7 +5,9 @@
 * https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial
 * [NodeJS on Ubuntu 22.x guide](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 
-## Step 1 - Setup the Ethereum Dapp development environment
+## Step 01 - Setup dev env and run initial tests
+
+### 1 - Setup the Ethereum Dapp development environment
 
 __1.1. Install NodeJS and its package manager__ 
 
@@ -77,11 +79,11 @@ __1.5. Install a IDE__
 > We recommend to install [VSCode](https://code.visualstudio.com/download) and an VSCode's extension wich will allow code NodeJS, TypeScript and Solidity programs.
 
 
-## Step 2 - Run a Smoke Test
+## 2 - Run a Smoke Test
 
 We are going to check if our Dapp development environment is going to work. In order to do that, we will test it using a simple Dapp. 
 
-__1. Open Ganache__
+__2.1. Open Ganache__
 
 I downloaded [`ganache-2.5.4-linux-x86_64.AppImage`](https://github.com/trufflesuite/ganache-ui/releases/download/v2.5.4/ganache-2.5.4-linux-x86_64.AppImage) installer for Linux in `Dowwnloads/` folder. 
 
@@ -99,14 +101,14 @@ You will see Ganache windows asking for `Quickstart` or `New Workspace` options 
 ![](imgs/chilcano-dapp-2-ganache-quickstart.png)
 
 
-__2. Create a Project directory for placing the initial dApp__
+__2.2. Create a Project directory for placing the initial dApp__
 
 ```sh
 $ mkdir dapp-election
 $ cd dapp-election
 ```
 
-__3. Create initial dApp using Truffle box with Pet Shop box__
+__2.3. Create initial dApp using Truffle box with Pet Shop box__
 
 Truffle provides many [examples called boxes](https://trufflesuite.com/boxes/), we will use [Pet Shop box](http://truffleframework.com/boxes/pet-shop) and will reuse its code.
 Let's create a dApp from the [Pet Shop box](http://truffleframework.com/boxes/pet-shop) code.
@@ -155,7 +157,7 @@ In the same terminal and same folder `dapp-election`, open the VSCode by executi
 ![](imgs/chilcano-dapp-3-create-election.sol.png)
 
 
-__4. Add a simple new contract and migrate it__
+__2.4. Add a simple new contract and migrate it__
 
 Add the new simple contract `contracts/Election.sol` with this code in solidity:
 ```js
