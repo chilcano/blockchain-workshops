@@ -11,7 +11,9 @@
 * https://www.30daysofweb3.xyz/
 * https://codesandbox.io/examples/package/web3
 * https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial
-  - [Step 1- My notes & summary](ethereum-dapp-tutorial/)
+  - [Step 01 - Setup dev env and run initial tests](ethereum-dapp-tutorial/README.md)
+  - [Step 02 - List candidates](ethereum-dapp-tutorial/README2.md)
+  - [Step 03 - Add client side application](ethereum-dapp-tutorial/README3.md)
 
 # Zero-Knowledge Proof
 
