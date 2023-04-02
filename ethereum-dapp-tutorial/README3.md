@@ -217,6 +217,7 @@ You should see this:
 ```
 
 and in your browser you will see:
+
 ![](imgs/chilcano-dapp03-1-run-nodejs-app-browser.png)
 
 __3.3. Connect Metamask Wallet to Local Blockchai(Ganache)__
@@ -229,4 +230,22 @@ In order to interact with our dapp, specifically with our client side applicatio
 This is the reason we should install Metamask in our browser, load a valid wallet address that contains crypto money required to make transactions in our dapp.
 
 In simple words, making transactions thrrough smartcontracts rerquire `gas` that will be paid from our connected Wallet.
+
+![](imgs/chilcano-dapp03-2-nodejs-app-browser-wallet.png)
+
+![](imgs/chilcano-dapp03-3-wallet-add-local-blockchain.png)
+
+![](imgs/chilcano-dapp03-4-wallet-add-local-blockchain-manual.png)
+
+![](imgs/chilcano-dapp03-5-wallet-add-ganache.png)
+
+![](imgs/chilcano-dapp03-6-wallet-added-ganache.png)
+
+![](imgs/chilcano-dapp03-7-import-key-to-wallet.png)
+
+![](imgs/chilcano-dapp03-8-import-key-to-wallet.png)
+
+![](imgs/chilcano-dapp03-9-import-key-to-wallet.png)
+
+![](imgs/chilcano-dapp03-10-import-key-to-wallet.png)
 
