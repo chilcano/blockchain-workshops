@@ -79,7 +79,7 @@ __1.5. Install a IDE__
 > We recommend to install [VSCode](https://code.visualstudio.com/download) and an VSCode's extension wich will allow code NodeJS, TypeScript and Solidity programs.
 
 
-## 2 - Run a Smoke Test
+### 2 - Run a Smoke Test
 
 We are going to check if our Dapp development environment is going to work. In order to do that, we will test it using a simple Dapp. 
 

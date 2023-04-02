@@ -60,7 +60,7 @@ Update the existing `dapp-election-03/src/index.html` file with this code:
 </html>
 ```
 
-## 2 - Frontend: JS application
+### 2 - Frontend: JS application
 
 Let's update the JavaScript logic in existing `dapp-election-03/src/js/app.js` JS file with this content:
 
