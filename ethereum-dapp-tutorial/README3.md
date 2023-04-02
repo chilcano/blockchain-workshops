@@ -149,6 +149,17 @@ $(function() {
 });
 ```
 
+__2.1. Remove unused files from petshop example__
+
+* ./dapp-election-03/box-img-lg.png
+* ./dapp-election-03/box-img-sm.png
+* ./dapp-election-03/src/pets.json
+* ./dapp-election-03/src/images/boxer.jpeg
+* ./dapp-election-03/src/images/french-bulldog.jpeg
+* ./dapp-election-03/src/images/golden-retriever.jpeg
+* ./dapp-election-03/src/images/scottish-terrier.jpeg
+
+
 ## 3 - Deploy contracts and run application
 
 __3.1. Deploy contracts again__
@@ -206,5 +217,16 @@ You should see this:
 ```
 
 and in your browser you will see:
-![](../imgs/chilcano-dapp03-1-run-nodejs-app-browser.png)
+![](imgs/chilcano-dapp03-1-run-nodejs-app-browser.png)
+
+__3.3. Connect Metamask Wallet to Local Blockchai(Ganache)__
+
+In order to interact with our dapp, specifically with our client side application, we should connect with a valid Wallet Address through a valid blockchain network. In this case, Ganache provides us both things:
+
+1. A local valid Blockchain network for testing purposes.
+2. A set of valid Wallet addresses with crypto money for testing purposes.
+
+This is the reason we should install Metamask in our browser, load a valid wallet address that contains crypto money required to make transactions in our dapp.
+
+In simple words, making transactions thrrough smartcontracts rerquire `gas` that will be paid from our connected Wallet.
 
